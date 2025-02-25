@@ -61,8 +61,10 @@ This is Process Time[msec]
 
 
 # AI モデル性能比較表
-
-| モデル | NPU1(half/int8) Time[ms]| MACs | TOPS=(MACs*2*1000/time[ms])/10^12 |
+```
+TPOS=(MACs*2*1000/time[ms])/10^12
+```
+| モデル | NPU1(half/int8) Time[ms]| MACs | TOPS |
 |-------------------|----------------------|-----------------|------|
 | shufflenet_v2_x0_5 | 1.1 | 43,050,627 | 0.08 |
 | shufflenet_v2_x1_0 | 1.4 | 149,074,867 | 0.21 |
