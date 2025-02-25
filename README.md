@@ -59,6 +59,28 @@ This is Process Time[msec]
 | vgg16 | 5141.4 | 2620.2 | 35.9 | 32.0 |
 | vgg19 | 6408.4 | 3268.9 | 39.9 | 35.2 |
 
+
+# AI モデル性能比較表
+
+| モデル | NPU1(half core) (int8) | MACs | TOPS |
+|-------------------|----------------------|-----------------|------|
+| shufflenet_v2_x0_5 | 1.1 | 43,050,627 | 0.08 |
+| shufflenet_v2_x1_0 | 1.4 | 149,074,867 | 0.21 |
+| shufflenet_v2_x1_5 | 1.7 | 301,331,587 | 0.35 |
+| shufflenet_v2_x2_0 | 5.5 | 590,568,883 | 0.21 |
+| mobilenet_v2 | 1.7 | 319,949,192 | 0.38 |
+| mobilenet_v3_large | 2.4 | 232,570,144 | 0.19 |
+| squeezenet1_0 | 2.5 | 832,767,864 | 0.67 |
+| squeezenet1_1 | 2.8 | 357,475,224 | 0.26 |
+| resnet18 | 3.4 | 1,821,452,264 | 1.07 |
+| resnet34 | 5.7 | 3,674,276,328 | 1.29 |
+| resnet50 | 8.3 | 4,117,342,184 | 0.99 |
+| resnet152 | 17.1 | 11,572,291,560 | 1.35 |
+| vgg11 | 28.8 | 7,630,106,088 | 0.53 |
+| vgg13 | 31.9 | 11,339,116,008 | 0.71 |
+| vgg16 | 35.9 | 15,503,523,304 | 0.86 |
+| vgg19 | 39.9 | 19,667,930,600 | 0.99 |
+
 ## Note:
 
 Since the first execution of PyAXEngine was slow, I measured the execution time of the 2nd to 9th executions. See below.<br>
